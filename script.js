@@ -47,6 +47,9 @@ resetButton.addEventListener("click", function(){
 	pickedColor = pickColor();
 	//change color display to match picked color
 	colorDisplay.textContent = pickedColor;
+	this.textContent = "New Colors"
+	// Remove Correct! when the player starts a new game
+	messageDisplay.textContent = "";
 	//change colors of squares
 	for(var i = 0; i < squares.length; i++) {
 		squares [i].style.background = colors [i];
